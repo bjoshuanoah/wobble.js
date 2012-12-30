@@ -1,4 +1,4 @@
-wobble.js
+## wobble.js
 
 wobble.js is a simple jquery method that adds a wobble/teeter effect to any div or photo on mouse-over with css3 transforms.
 
