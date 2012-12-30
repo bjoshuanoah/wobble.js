@@ -9,9 +9,12 @@ jQuery.fn.wobble = function(factor) {
 			if (factor == undefined){
 				factor = 15;
 			}
+			var pos = elem.offset();
 			elem.on('mousemove', function (h) {
-				var x = h.offsetX - y_split;
-				var y = h.offsetY - x_split;
+				var offsetX = h.clientX - pos.left;
+				var offsetY = h.clientY - pos.top;
+				var x = offsetX - y_split;
+				var y = offsetY - x_split;
 				var x_pct = x/y_split ;
 				var y_pct = y/x_split;
 				if (x_pct > 1){
@@ -33,6 +36,11 @@ jQuery.fn.wobble = function(factor) {
 					'-o-transform' : 'rotateX(' + x_rotate + 'deg)rotateY(' + y_rotate + 'deg)',
 					'transform' : 'rotateX(' + x_rotate + 'deg)rotateY(' + y_rotate + 'deg)'
 				});
+				$('.reflection', elem).css({
+					'width': y_rotate + 80 + '%',
+					'height': x_rotate + 80 + '%'
+				});
+				
 			});
 		});
 	});
