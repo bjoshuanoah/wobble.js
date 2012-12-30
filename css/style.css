@@ -500,9 +500,9 @@ body {
   background-image: -moz-radial-gradient(center, ellipse cover, #a90329 0%, #8f0222 44%, #6d0019);
   background-image: -o-radial-gradient(center, ellipse cover, #a90329 0%, #8f0222 44%, #6d0019);
   background-image: radial-gradient(center, ellipse cover, #a90329 0%, #8f0222 44%, #6d0019);
-  -webkit-box-shadow: 0 0 30px black, inset 0 0 15px rgba(255, 255, 255, 0.4);
-  -moz-box-shadow: 0 0 30px black, inset 0 0 15px rgba(255, 255, 255, 0.4);
-  box-shadow: 0 0 30px black, inset 0 0 15px rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0 0 30px black, inset 0 0 15px rgba(150, 150, 150, 0.4);
+  -moz-box-shadow: 0 0 30px black, inset 0 0 15px rgba(150, 150, 150, 0.4);
+  box-shadow: 0 0 30px black, inset 0 0 15px rgba(150, 150, 150, 0.4);
 
 }
 
