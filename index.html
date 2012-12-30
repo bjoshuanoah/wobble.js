@@ -31,7 +31,9 @@
 
       <section>
         <div id="title">
-          <h1>wobble.js</h1>
+           <div class="logo" id="logo_top">
+            <img src="img/logo.png">
+          </div>
           <p>wobble your divs</p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/bjoshuanoah">bjoshuanoah</a></span>
@@ -51,13 +53,34 @@
 
 <p>The default maximum rotation angle is 15, so if that is too much, or too little, simply add the rotation angle as an argument.</p>
 
-<pre><code>$('.logo').wobble(30); // Adds more rotation.
-$('.logo').wobble(7); // Makes the rotation angle smaller.
+<pre><code>$('.logo').wobble(30); // Adds more rotation.</code></pre>
+
+<div class="logo" id="logo_thirty">
+  <img src="img/logo.png">
+</div>
+
+<pre><code>$('.logo').wobble(7); // Makes the rotation angle smaller.
 </code></pre>
+
+<div class="logo" id="logo_seven">
+  <img src="img/logo.png">
+</div>
+
+<p>To make sure that you get the correct perspecitve of your wobbles, make sure yo set the perspective of the parent div to 1000</p>
+
+<pre><code> -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+</code></pre>
+
       </section>
 
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script src="js//libs/jquery.js"></script>
+    <script src="js/wobble.js"></script>
+    <script src="js/load.js"></script>
   </body>
 </html>

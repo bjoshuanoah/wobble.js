@@ -609,6 +609,11 @@ strong {
   margin: 0 auto;
   position: relative;
   padding: 0 20px;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
 }
 
 section img {
@@ -848,4 +853,29 @@ section #title .credits.right {
   nav {
     display: none;
   }
+}
+
+
+.logo {
+  height:250px;
+  width:250px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:10px;
+  border-radius: 8%;
+  overflow: hidden;
+  background-color: #a90329;
+  background-image: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, #a90329), color-stop(44%, #8f0222), color-stop(100%, #6d0019));
+  background-image: -webkit-radial-gradient(center, ellipse cover, #a90329 0%, #8f0222 44%, #6d0019);
+  background-image: -moz-radial-gradient(center, ellipse cover, #a90329 0%, #8f0222 44%, #6d0019);
+  background-image: -o-radial-gradient(center, ellipse cover, #a90329 0%, #8f0222 44%, #6d0019);
+  background-image: radial-gradient(center, ellipse cover, #a90329 0%, #8f0222 44%, #6d0019);
+  -webkit-box-shadow: 0 0 30px black, inset 0 0 15px rgba(150, 150, 150, 0.4);
+  -moz-box-shadow: 0 0 30px black, inset 0 0 15px rgba(150, 150, 150, 0.4);
+  box-shadow: 0 0 30px black, inset 0 0 15px rgba(150, 150, 150, 0.4);
+
+}
+
+.logo img{
+  width:100%;
 }
