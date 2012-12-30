@@ -1,7 +1,8 @@
 jQuery.fn.wobble = function(factor) {
 	return this.each(function() {
 		var elem = $(this);
-		elem.on('hover', function () {
+		
+		elem.on('hover touchstart', function () {
 			var elem_width = elem.innerWidth();
 			var elem_height = elem.innerHeight();
 			var y_split = elem_width/2;
@@ -10,9 +11,9 @@ jQuery.fn.wobble = function(factor) {
 				factor = 15;
 			}
 			var pos = elem.offset();
-			elem.on('mousemove', function (h) {
-				var offsetX = h.clientX - pos.left;
-				var offsetY = h.clientY - pos.top;
+			var wobbleThis = function (x, y) {
+				var offsetX = x - pos.left;
+				var offsetY = y - pos.top;
 				var x = offsetX - y_split;
 				var y = offsetY - x_split;
 				var x_pct = x/y_split ;
@@ -40,7 +41,12 @@ jQuery.fn.wobble = function(factor) {
 					'width': y_rotate + 80 + '%',
 					'height': x_rotate + 80 + '%'
 				});
-				
+			}
+			elem.on('touchmove', function (h) {
+				wobbleThis(h.originalEvent.pageX, h.originalEvent.pageY);
+			});
+			elem.on('mousemove', function (h) {
+				wobbleThis(h.clientX, h.clientY);
 			});
 		});
 	});

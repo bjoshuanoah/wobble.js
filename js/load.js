@@ -1,7 +1,12 @@
 $('#logo').wobble();
 
-$('html').css({'height': $(window).innerHeight() + 'px'});
+$('body').css({'height': $(window).innerHeight() + 'px'});
 
 $(window).resize(function () {
-	$('html').css({'height': $(window).innerHeight() + 'px'});
+	$('body').css({'height': $(window).innerHeight() + 'px'});
 });
+
+function allowScrolling(touchEvent) { 
+	touchEvent.preventDefault(); 
+};
+$('html').bind('touchmove', allowScrolling, false);

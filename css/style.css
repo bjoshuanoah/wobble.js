@@ -37,6 +37,12 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  box-sizing:border-box;
+}
+
+* {
+  box-sizing:border-box;
+  position: relative;
 }
 
 /* line 41, ../sass/plugins/_reset.scss */
@@ -474,6 +480,11 @@ td {
 * {
   position: relative;
   outline: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body {
@@ -533,7 +544,7 @@ body {
 /* line 35, ../sass/style.scss */
 #login {
   width: 250px;
-  margin-top:38%;
+  top:50%;
   margin-left:auto;
   margin-right:auto;
   -webkit-perspective: 1000;
@@ -544,7 +555,6 @@ body {
 }
 /* line 44, ../sass/style.scss */
 #login .container {
-  margin-top:-50%;
   width:250px;
   height:250px;
 }
