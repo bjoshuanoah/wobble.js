@@ -31,8 +31,11 @@
 
       <section>
         <div id="title">
+          <div id="logo_container" style="width:250px; margin:0 auto">
            <div class="logo" id="logo_top">
+            <div class="reflection"></div>
             <img src="img/logo.png">
+          </div>
           </div>
           <p>wobble your divs</p>
           <hr>
@@ -54,18 +57,21 @@
 <p>The default maximum rotation angle is 15, so if that is too much, or too little, simply add the rotation angle as an argument.</p>
 
 <pre><code>$('.logo').wobble(30); // Adds more rotation.</code></pre>
-
+<div id="logo_container" style="width:250px; margin:0 auto">
 <div class="logo" id="logo_thirty">
+  <div class="reflection"></div>
   <img src="img/logo.png">
+</div>
 </div>
 
 <pre><code>$('.logo').wobble(7); // Makes the rotation angle smaller.
 </code></pre>
-
+<div id="logo_container" style="width:250px; margin:0 auto">
 <div class="logo" id="logo_seven">
+  <div class="reflection"></div>
   <img src="img/logo.png">
 </div>
-
+</div>
 <p>To make sure that you get the correct perspecitve of your wobbles, make sure yo set the perspective of the parent div to 1000</p>
 
 <pre><code> -webkit-perspective: 1000;
