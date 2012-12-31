@@ -10,7 +10,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/zurb.css">
   <link rel="stylesheet" href="css/style.css">
 
   <!--[if lt IE 9]>
@@ -29,9 +28,64 @@
     </div>
   </div>
 
+   <nav>
+      <a href="https://github.com/bjoshuanoah/wobble.js"><button class="fork">View On GitHub</button></a>
+      <span class="title">DOWNLOADS:</span>
+      <a href="https://github.com/bjoshuanoah/wobble.js/zipball/master"><button class="downloads">ZIP</button></a>
+      <a href="https://github.com/bjoshuanoah/wobble.js/tarball/master"><button class="downloads">TAR</button></a>
+    </nav>
+
+
+  <div id="information">
+    <div class="container">
+      <h1>wobble.js</h1>
+      <p>    
+        wobble.js is a simple jquery method that adds a wobble/teeter effect to any div or photo on mouse-over with css3 transforms.
+      </p>
+      <p> 
+        Easy to use, cross browser compatible: Chrome, Firefox, Safari, Opera, IE9 and iOS
+      </p>
+      <p> 
+        To wobble your div simply add the .wobble() method to the desired element.
+      </p>
+      <p> 
+        The default maximum rotation angle is 15, so if that is too much, or too little, simply add the rotation angle as an argument.
+      </p>
+      <p> 
+      <code>
+        <span class="pink">$</span>(<span class="yellow">'.logo'</span>).<span class="blue">wobble</span>();
+      </code>
+      <button id="15">Reset</button>
+      </p>
+      <p> 
+      <code>
+        <span class="pink">$</span>(<span class="yellow">'.logo'</span>).<span class="blue">wobble</span>(30);
+      </code>
+      <button id="30">30</button>
+      </p>
+      <p> 
+      <code>
+        <span class="pink">$</span>(<span class="yellow">'.logo'</span>).<span class="blue">wobble</span>(7);
+      </code>
+      <button id="7">7</button>
+      </p>
+      <p> 
+      To make sure that you get the correct perspecitve of your wobbles, make sure yo set the perspective of the parent div to 1000
+      </p>
+      <code class="long">
+        -webkit-perspective: 1000;<br>
+        -moz-perspective: 1000;<br>
+        -ms-perspective: 1000;<br>
+        -o-perspective: 1000;<br>
+        perspective: 1000;<br>
+      </code>
+    </div>
+  </div>
   <script src="js/libs/jquery.js"></script>
-  <script src="js/wobble.js"></script>
-  <script src="js/load.js"></script>
+  <script src="js/libs/jquery.mousewheel.js"></script>
   <script src="js/libs/jqueryui.min.js"></script>
   <script src="js/jqueryui.touch-punch.js"></script>
+  <script src="js/wobble.js"></script>
+  <script src="js/load.js"></script>
+  <script src="js/events.js"></script>
 </body>
