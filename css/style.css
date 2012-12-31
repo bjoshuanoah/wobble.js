@@ -643,7 +643,15 @@ nav {
   right:10px;
 }
 
+@media only screen and (max-width: 767px){
+    nav {
+      display: none;
+    }
 
+    #information {
+      display: none;
+    }
+}
 
 
 
