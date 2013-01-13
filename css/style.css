@@ -43,6 +43,7 @@ html {
 
 * {
   box-sizing:border-box;
+  -moz-box-sizing:border-box;
   position: relative;
 }
 
@@ -502,21 +503,23 @@ body {
 
 /* line 24, ../sass/style.scss */
 #logo {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 150px;
   border-radius: 8%;
   overflow: hidden;
-  background-color: #e80408;
+  /*background-color: #e80408;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IiIgcj0iMTAwIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZTgwNDA4Ii8+PHN0b3Agb2Zmc2V0PSI0NCUiIHN0b3AtY29sb3I9IiNkNjA0MDciLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2ZDAwMTkiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background-size: 100%;
   background-image: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, #e80408), color-stop(44%, #d60407), color-stop(100%, #6d0019));
   background-image: -webkit-radial-gradient(center, ellipse cover, #e80408 0%, #d60407 44%, #6d0019);
   background-image: -moz-radial-gradient(center, ellipse cover, #e80408 0%, #d60407 44%, #6d0019);
   background-image: -o-radial-gradient(center, ellipse cover, #e80408 0%, #d60407 44%, #6d0019);
-  background-image: radial-gradient(center, ellipse cover, #e80408 0%, #d60407 44%, #6d0019);
-  -webkit-box-shadow: 0 0 30px black, inset 0 0 15px rgba(255, 255, 255, 0.4);
-  -moz-box-shadow: 0 0 30px black, inset 0 0 15px rgba(255, 255, 255, 0.4);
-  box-shadow: 0 0 30px black, inset 0 0 15px rgba(255, 255, 255, 0.4);
+  background-image: radial-gradient(center, ellipse cover, #e80408 0%, #d60407 44%, #6d0019);*/
+  border-radius: 50%;
+  background: #000000
+  -webkit-box-shadow: inset 0 0 15px rgba(255, 255, 255, 1);
+  -moz-box-shadow: inset 0 0 15px rgba(255, 255, 255, 1);
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 1);
 }
 /* line 33, ../sass/style.scss */
 #logo img {
@@ -524,15 +527,16 @@ body {
 }
 /* line 36, ../sass/style.scss */
 #logo .reflection {
-  width: 80%;
-  height: 80%;
-  right: 0;
+  width: 50%;
+  height: 50%;
+  right: 3%;
+  top: 3%;
   position: absolute;
-  -webkit-border-radius: 5% 16% 5% 95%;
-  -moz-border-radius: 5% 16% 5% 95%;
-  -ms-border-radius: 5% 16% 5% 95%;
-  -o-border-radius: 5% 16% 5% 95%;
-  border-radius: 5% 16% 5% 95%;
+  -webkit-border-radius: 50% 80% 50% 90%;
+  -moz-border-radius: 50% 80% 50% 90%;
+  -ms-border-radius: 50% 80% 50% 90%;
+  -o-border-radius: 50% 80% 50% 90%;
+  border-radius: 50% 80% 50% 90%;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjYpIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDApIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
   background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(0%, rgba(255, 255, 255, 0.6)), color-stop(100%, rgba(255, 255, 255, 0)));
@@ -544,26 +548,33 @@ body {
 
 /* line 35, ../sass/style.scss */
 #login {
-  width: 250px;
+  width: 200px;
   top:50%;
   margin-left:auto;
   margin-right:auto;
-  -webkit-perspective: 1000;
-  -moz-perspective: 1000;
-  -ms-perspective: 1000;
-  -o-perspective: 1000;
-  perspective: 1000;
+  -webkit-perspective: 500;
+  -moz-perspective: 500;
+  -ms-perspective: 500;
+  -o-perspective: 500;
+  perspective: 500;
 }
 /* line 44, ../sass/style.scss */
 #login .container {
-  width:250px;
-  height:250px;
+  width:200;
+  height:200;
 }
 /* line 47, ../sass/style.scss */
 #login .container .logo {
-  width:250px;
-  height:250px;
-  top:-125px;
+  width:200;
+  height:150;
+  top:-75px;
+  z-index: 2;
+}
+
+#ninja_body {
+  position: absolute;
+  top:21px;
+  left:-3px;
 }
 
 

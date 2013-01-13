@@ -28,8 +28,8 @@ jQuery.fn.wobble = function(factor) {
 				} else if (y_pct < -1){
 					y_pct = -1;
 				}
-				var y_rotate = Math.floor(x_pct * factor * -1);
-				var x_rotate = Math.floor(y_pct * factor);
+				var y_rotate = Math.floor(x_pct * factor);
+				var x_rotate = Math.floor(y_pct * factor * -1);
 				elem.css({
 					'-webkit-transform' : 'rotateX(' + x_rotate + 'deg)rotateY(' + y_rotate + 'deg)',
 					'-moz-transform' : 'rotateX(' + x_rotate + 'deg)rotateY(' + y_rotate + 'deg)',
